@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: url("../image/bg.jpg") center center fixed;
+	background-size: cover;
+}
+	.UploaderHeader{
+		border-bottom: 1px solid #dedede;
+                background-color: wheat;
+	}
+	#LinkGallery{
+		background:url("../image/Gallery.png");
+		background-repeat: no-repeat;
+		width:32px;
+		height:32px;
+		cursor: pointer;
+		float: left;
+		position: relative;
+		left: 2%;
+	}
+	.UploaderHeader h2{
+		margin: 0px auto;
+		width: 50%;
+		padding: 15px;
+	}
+	#ImageForm{
+		margin: 0 auto;
+		width: 87%;
+		padding: 15px;
+	}
+	#ImageForm input[type=file]{
+		border:2px solid #dedede;
+		padding: 4px;
+	}
+	#ImageForm input[type=submit]{
+		padding: 6px;
+		background: #7A7A52;
+		color: #fff;
+		cursor: pointer;
+		-webkit-transition: 0.2s linear; /* For Safari 3.1 to 6.0 */
+    	transition: 0.2s linear;
+	}
+	#ImageForm input[type=submit]:hover{
+		background: #FFF;
+		color: #7A7A52;
+	}	
+	#UploadSuccess{
+		margin: 0 auto;
+		width:80%;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	#UploadSuccess span{
+		color: green;
+	}	
+	#image-preview{
+		padding: 10px;
+		border: 1px solid #dedede;
+	}
+	#image-details{
+		padding: 10px 20px;
+		background:#dedede;
+		width: 282px;
+		font-size: 14px;
+	}
+	#image-details span{
+	}
+	.content-wrepper{
+		width: 30%;
+		border:2px solid #dedede;
+		position: relative;
+		left:30%;
+		top:15%;
+		background-color: #ffffff;
+	}
+	.content-wrepper #Image-Form{
+		padding:5%;
+	}
+	.content-wrepper .preview-details{
+		padding:0% 5% 8% 8%;
+	}
