@@ -33,9 +33,7 @@ if(!isset($_SESSION['user_id']))
 
 	<div class="full-content">
 	  
-	  	<div id="load" align="center">
-	  	<img src="image/loading2.gif" width="28" height="28" align="middle"/> <span style="color:#dfdfdf;">Deleting...</span>
-                </div>
+	  	
 
 		<?php
 			$directory = "uploads/".$_SESSION['user_id'];
@@ -50,20 +48,33 @@ if(!isset($_SESSION['user_id']))
 					$image_name_length = $pos_slash-$pos_dot;
 					$image_name = strrev(substr($inv_image_name,$pos_dot+1,$image_name_length-1));
 
-				echo "<div class=\"content-wrepper\">";
-	
+                                        echo "<div class=\"content-wrepper\">";
 					echo "<div class=\"image-content\">";
 					echo "<img src=".$image." data-large=".$image." width='230' height='155' />";
 					echo "<div class=\"image_title\">";
                                         echo "<h5 class=\"title\">".$image_name."</h5>";
 					echo "</div>";
-					?>
+                                        
+                                        ?><table>
+                                            <tr>
+                                                <td><?php echo "<li><a href=" . $image . ">.$image_name.</a></li>";?></td>
+                                            </tr>
+                                          </table>
+                                            
+                                       
+
+                                        
+					
+                                        
+          
 					</div>
+        
+                                        
 					<!-- End div: image-content -->
 					
                                         <input type="button" value="" class="delete" id="<?php echo $image ?>">
 					<a href="download.php?file=<?php echo $image ?>" class="download"></a>
-    				<div class="clear"></div>
+                                        <div class="clear"></div>
 				
 				</div>
 				<!--End: Content-wrepper-->					
