@@ -172,7 +172,7 @@ body {
 });
 </script>
 
-<script>
+<script type="text/javascript">
 function validateForm() {
     
  var x = document.forms["login"]["email"].value;
