@@ -132,7 +132,7 @@ body {
         <div class="login-page">
             <div class="form">
                 <form class="login-form" method="post" action="index.php"  name="registration" onsubmit="validateForm()">
-                     <input type="text" placeholder="User ID/ User Name" name="user_id"/>
+                    <input type="text" placeholder="User ID/ User Name" name="user_id" required/>
                     <input type="text" placeholder="Client Name" name="name"/>
                     <input type="text" placeholder="Company Name" name="cname"/>
                     <input type="text" placeholder="Email" name="email"/>
@@ -154,7 +154,7 @@ body {
 });
 </script>
 
-<script>
+<script type="text/javascript">
 function validateForm() {
     var x = document.forms["registration"]["name"].value;
     if (x == null || x == "") {
